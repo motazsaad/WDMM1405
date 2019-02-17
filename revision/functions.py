@@ -2,6 +2,17 @@
 # 1. reuse code
 # 2. simplify code
 
+# verb phrase for functions
+# def compute_sum(): # this is a good function name
+# def car_speed(): # this is a bad function name
+# def get_car_speed(): # this is a good function name
+# def increase_car_speed(): # this is a good function name
+
+# noun phrase for variables
+car_speed = 10
+# noun
+car = 'BMW'
+
 
 def add(x, y):
     return x + y
@@ -22,7 +33,7 @@ def say_hello(name):
 
 
 print(say_hello('Ahmed'))
-aname = input('enter a name: ')
-result = say_hello(aname)
-result += '\npython \\nis cool'
+name1 = input('enter a name: ')
+result = say_hello(name1)
+result += '\npython is cool'
 print(result)
