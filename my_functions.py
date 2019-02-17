@@ -1,3 +1,6 @@
+# re-implement some Python built-in functions
+
+
 def my_max(l1):
     max_number = l1[0]
     for number in l1:
