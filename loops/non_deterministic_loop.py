@@ -1,4 +1,4 @@
-# none deterministic
+# none deterministic loop
 ans = 'yes'
 while ans == 'yes':
     my_input = input('what is your name? ')
