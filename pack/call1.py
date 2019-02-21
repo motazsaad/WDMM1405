@@ -1,4 +1,4 @@
-import my_functions
+from pack import my_functions
 
 print(my_functions.my_max([1, 2, 5]))
 print(my_functions.my_sum([1, 2, 5]))
