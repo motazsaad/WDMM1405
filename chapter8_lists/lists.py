@@ -1,25 +1,32 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # primitive data: one value in variable 
+# # primitive data: one value in variable
+# 
+# primitive data type: int, float, str 
+# بيانات أولية وليست تجميعية ، فقط استطيع تخزين قيمة واحدة في المتغير 
 
 # In[3]:
 
 
-x = 10
+x = 10 
 print(x)
-x = 20
+x = 20 
 print(x)
+
 
 # # store more than one value in one variable (collection)
+# List is a collect. We can store many values in one variable 
 
-# In[4]:
+# In[15]:
 
 
 x = [10, 20]
 print(x)
+print(type(x))
 
-# # differet types in one collection
+
+# # different  types in one collection 
 
 # In[11]:
 
@@ -28,7 +35,8 @@ print(x)
 x = [10, 'Ahmed']
 print(x)
 
-# # list constant
+
+# # list constant 
 
 # In[12]:
 
@@ -37,24 +45,28 @@ print(x)
 print(3)
 print([1, 24, 76])
 
+
 # In[13]:
 
 
 # different types: str, int, float
 print(['red', 24, 98.6])
 
-# # list in a list / collection in a collection
+
+# # list in a list / collection in a collection 
 
 # In[15]:
 
 
-x = [1, [5, 6], 7]
+
+x = [ 1, [5, 6], 7]
 print(x)
 print(x[0])
 print(x[1])
 print(x[1][0])
 
-# # Empty list
+
+# # Empty list 
 
 # In[16]:
 
@@ -63,15 +75,17 @@ print(x[1][0])
 x = []
 print(x)
 
-# # iteration variable
+
+# # iteration variable 
 
 # In[18]:
 
 
 # iteration variable 
-for num in [5, 4, 3, 2, 1]:
+for num in [5, 4, 3, 2, 1] :
     print(num)
 print('Blastoff!')
+
 
 # In[19]:
 
@@ -79,8 +93,9 @@ print('Blastoff!')
 # iteration variable 
 friends = ['Joseph', 'Glenn', 'Sally']
 for name in friends:
-    print('Happy New Year:', name)
+    print('Happy New Year:',  name)
 print('Done!')
+
 
 # In[22]:
 
@@ -88,7 +103,8 @@ print('Done!')
 # access elements by index 
 print(friends[1])
 
-# # mutable list: we can change the value of list elements
+
+# # mutable list: we can change the value of list elements 
 
 # In[23]:
 
@@ -97,25 +113,27 @@ print(friends[1])
 friends[1] = 'Ahmed'
 print(friends)
 
-# # imutable list (list of characters)
 
-# In[31]:
+# # immutable list (list of characters)
+
+# In[39]:
 
 
-# imutable list 
-fruite = 'banana'
-print(fruite)
-print(fruite[1])
+# immutable list 
+fruit = 'banana'
+print(fruit)
+print(fruit[1])
 # fruite[1] = 'e'
 # convert to mutable 
-f = list(fruite)
-print(f)  # mutable
+f = list(fruit)
+print(f) # mutable 
 f[1] = 'e'
 print(f)
-fruite = str(''.join(f))
-print(fruite)
+fruit = str(''.join(f))
+print(fruit)
 
-# # join a list of numbers
+
+# # join a list of numbers 
 
 # In[2]:
 
@@ -126,7 +144,8 @@ print(l1)
 l2 = [str(x) for x in l1]
 print(';'.join(l2))
 
-# # loop on a list: way 1: iteration variable
+
+# # loop on a list: way 1: iteration variable 
 
 # In[3]:
 
@@ -134,10 +153,11 @@ print(';'.join(l2))
 # loop on list 
 friends = ['Joseph', 'Glenn', 'Sally']
 # way 1: iteration variable 
-for friend in friends:
-    print('Happy New Year:', friend)
+for friend in friends :
+    print('Happy New Year:',  friend)
 
-# # loop on a list: way 2: using index
+
+# # loop on a list: way 2: using index 
 
 # In[5]:
 
@@ -145,10 +165,11 @@ for friend in friends:
 # loop on list 
 friends = ['Joseph', 'Glenn', 'Sally']
 # way 2: index 
-for i in range(len(friends)):
-    print('Happy New Year:', friends[i])
+for i in range(len(friends)) :
+    print('Happy New Year:',  friends[i])
 
-# # list concatonation
+
+# # list concatonation 
 
 # In[39]:
 
@@ -156,7 +177,7 @@ for i in range(len(friends)):
 a = [1, 2, 3]
 b = [4, 5, 6]
 # concat 
-c = a + b
+c = a + b 
 print(c)
 # d = a - b # error 
 
@@ -169,10 +190,21 @@ print(c)
 # sum 2 lists 
 a = [1, 2, 3]
 b = [4, 5, 6]
-c = [a[i] + b[i] for i in range(len(a))]
+c = [a[i] + b[i] for i in range(len(a))] # using index 
 print(c)
 
-# # slicing a list
+
+# In[19]:
+
+
+# sum 2 lists 
+a = [1, 2, 3]
+b = [4, 5, 6]
+c = [m + n for m, n in zip(a, b)] # using iteration variables  
+print(c)
+
+
+# # slicing a list 
 
 # In[47]:
 
@@ -180,11 +212,12 @@ print(c)
 # slicing a list 
 t = [9, 41, 12, 3, 74, 15]
 print(t)
-print(t[2:4])  # index 2, 3
-print(t[2:])  # index 2 to the end
-print(t[:4])  # index 0 to 3
+print(t[2:4]) # index 2, 3 
+print(t[2:]) # index 2 to the end 
+print(t[:4]) # index 0 to 3 
 
-# # list mehtods
+
+# # list methods 
 
 # In[6]:
 
@@ -193,16 +226,18 @@ print(t[:4])  # index 0 to 3
 t = [9, 41, 12, 3, 74, 15]
 print(dir(t))
 
-# # append functions
+
+# # append functions 
 
 # In[49]:
 
 
 print(t)
-t.append(10)  # add 3 to the end of the list
+t.append(10) # add 3 to the end of the list 
 print(t)
 
-# # sum 2 lists using empty list with append
+
+# # sum 2 lists using empty list with append 
 
 # In[52]:
 
@@ -218,9 +253,10 @@ for i in range(list_size):
     c.append(r)
     print(i, c)
 
-# # count function
 
-# In[65]:
+# # count function 
+
+# In[11]:
 
 
 # count 
@@ -232,11 +268,131 @@ t.append(3)
 print(t)
 print(t.count(3))
 
+
 # # extend function
 
 # In[7]:
 
 
 print(t)
-t.extend([1, 2, 5])  # similar to t + [1, 2, 5]
+t.extend([1, 2, 5]) # similar to t + [1, 2, 5]
 print(t)
+
+
+# # index function
+
+# In[10]:
+
+
+print(t)
+t.index(15)
+# t.index(5) # does not exist --> value error 
+
+
+# # insert function 
+
+# In[13]:
+
+
+t = [9, 41, 12, 3, 74, 15]
+print(t)
+t.insert(3, 5) # insert 5 at index 3 
+print(t)
+
+
+# # pop function 
+
+# In[24]:
+
+
+t = [9, 41, 12, 3, 74, 15]
+print(t)
+print(t.pop())
+print(t)
+
+
+# # remove function
+
+# In[28]:
+
+
+t = [9, 41, 12, 3, 74, 15]
+print(t)
+t.remove(12)
+print(t)
+t.append(3)
+print(t)
+t.remove(3) # remove the first match 
+print(t)
+
+
+# # reverse function 
+
+# In[29]:
+
+
+t = [9, 41, 12, 3, 74, 15]
+print(t)
+t.reverse()
+print(t)
+
+
+# # sort function 
+
+# In[31]:
+
+
+t = [9, 41, 12, 3, 74, 15]
+print(t)
+t.sort()
+print(t)
+t.sort(reverse=True)
+print(t)
+
+
+# # Is Something in a List?
+
+# In[34]:
+
+
+t = [9, 41, 12, 3, 74, 15]
+print(t)
+12 in t
+
+
+# In[35]:
+
+
+5 in t
+
+
+# # Built-in Functions and Lists
+
+# In[36]:
+
+
+nums = [3, 41, 12, 9, 74, 15]
+print(len(nums))
+print(max(nums))
+print(min(nums))
+print(sum(nums))
+print(sum(nums)/len(nums))
+
+
+# # split a string with a lot of spaces 
+
+# In[37]:
+
+
+line = 'A lot               of spaces'
+line.split()
+
+
+# # split a string using a delimter 
+
+# In[38]:
+
+
+line = 'first;second;third'
+line.split(';')
+
