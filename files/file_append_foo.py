@@ -1,0 +1,13 @@
+infile = open('text.txt')
+text = infile.read()
+infile.close()
+# print('original text:\n', text)
+small_text = text.lower()
+# print('small text:\n', small_text)
+outfile = open('small_text2.txt', mode='w')
+outfile.write(small_text)
+outfile.close()
+
+outfile = open('small_text2.txt', mode='a')
+outfile.write('\nbone appetite')
+outfile.close()
