@@ -1,12 +1,18 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # Programming
+# * Algorithm  A set of rules or steps used to solve a problem
+# 
+# * Data Structure  -  A particular way of organizing data in a computer
+# 
+
 # # primitive data: one value in variable
 # 
 # primitive data type: int, float, str 
 # بيانات أولية وليست تجميعية ، فقط استطيع تخزين قيمة واحدة في المتغير 
 
-# In[3]:
+# In[1]:
 
 
 x = 10 
@@ -18,7 +24,7 @@ print(x)
 # # store more than one value in one variable (collection)
 # List is a collect. We can store many values in one variable 
 
-# In[15]:
+# In[2]:
 
 
 x = [10, 20]
@@ -28,7 +34,7 @@ print(type(x))
 
 # # different  types in one collection 
 
-# In[11]:
+# In[3]:
 
 
 # differet types in one collection 
@@ -36,9 +42,16 @@ x = [10, 'Ahmed']
 print(x)
 
 
+# In[4]:
+
+
+# different types: str, int, float
+print(['red', 24, 98.6])
+
+
 # # list constant 
 
-# In[12]:
+# In[5]:
 
 
 # list constant 
@@ -46,20 +59,12 @@ print(3)
 print([1, 24, 76])
 
 
-# In[13]:
-
-
-# different types: str, int, float
-print(['red', 24, 98.6])
-
-
 # # list in a list / collection in a collection 
 
-# In[15]:
+# In[6]:
 
 
-
-x = [ 1, [5, 6], 7]
+x = [1, [5, 6], 7]
 print(x)
 print(x[0])
 print(x[1])
@@ -68,17 +73,27 @@ print(x[1][0])
 
 # # Empty list 
 
-# In[16]:
+# In[7]:
 
 
-# empty list 
+# empty lists 
 x = []
-print(x)
+y = list()
+print('x = ', x)
+print('y = ', y)
+
+
+# In[8]:
+
+
+# Empty String 
+empty_str = ''
+print(empty_str)
 
 
 # # iteration variable 
 
-# In[18]:
+# In[9]:
 
 
 # iteration variable 
@@ -87,7 +102,7 @@ for num in [5, 4, 3, 2, 1] :
 print('Blastoff!')
 
 
-# In[19]:
+# In[10]:
 
 
 # iteration variable 
@@ -97,7 +112,7 @@ for name in friends:
 print('Done!')
 
 
-# In[22]:
+# In[11]:
 
 
 # access elements by index 
@@ -106,7 +121,7 @@ print(friends[1])
 
 # # mutable list: we can change the value of list elements 
 
-# In[23]:
+# In[12]:
 
 
 # mutable list 
@@ -116,26 +131,41 @@ print(friends)
 
 # # immutable list (list of characters)
 
-# In[39]:
+# In[13]:
 
 
 # immutable list 
 fruit = 'banana'
 print(fruit)
+
+
+# In[14]:
+
+
 print(fruit[1])
-# fruite[1] = 'e'
+# fruite[1] = 'e' # error 
+
+
+# In[15]:
+
+
 # convert to mutable 
 f = list(fruit)
 print(f) # mutable 
 f[1] = 'e'
 print(f)
+
+
+# In[16]:
+
+
 fruit = str(''.join(f))
 print(fruit)
 
 
 # # join a list of numbers 
 
-# In[2]:
+# In[17]:
 
 
 # join list 
@@ -147,7 +177,7 @@ print(';'.join(l2))
 
 # # loop on a list: way 1: iteration variable 
 
-# In[3]:
+# In[18]:
 
 
 # loop on list 
@@ -159,7 +189,7 @@ for friend in friends :
 
 # # loop on a list: way 2: using index 
 
-# In[5]:
+# In[19]:
 
 
 # loop on list 
@@ -171,7 +201,7 @@ for i in range(len(friends)) :
 
 # # list concatonation 
 
-# In[39]:
+# In[20]:
 
 
 a = [1, 2, 3]
@@ -184,7 +214,7 @@ print(c)
 
 # # sum 2 lists 
 
-# In[40]:
+# In[21]:
 
 
 # sum 2 lists 
@@ -194,7 +224,7 @@ c = [a[i] + b[i] for i in range(len(a))] # using index
 print(c)
 
 
-# In[19]:
+# In[22]:
 
 
 # sum 2 lists 
@@ -204,9 +234,19 @@ c = [m + n for m, n in zip(a, b)] # using iteration variables
 print(c)
 
 
+# # Understanding zip function 
+
+# In[23]:
+
+
+a = [1, 2, 3]
+b = [4, 5, 6]
+print(list(zip(a, b)))
+
+
 # # slicing a list 
 
-# In[47]:
+# In[24]:
 
 
 # slicing a list 
@@ -219,7 +259,7 @@ print(t[:4]) # index 0 to 3
 
 # # list methods 
 
-# In[6]:
+# In[25]:
 
 
 # list mehtods 
@@ -229,7 +269,7 @@ print(dir(t))
 
 # # append functions 
 
-# In[49]:
+# In[26]:
 
 
 print(t)
@@ -239,7 +279,7 @@ print(t)
 
 # # sum 2 lists using empty list with append 
 
-# In[52]:
+# In[27]:
 
 
 # sum 2 lists using empty list with append 
@@ -256,7 +296,7 @@ for i in range(list_size):
 
 # # count function 
 
-# In[11]:
+# In[28]:
 
 
 # count 
@@ -271,7 +311,7 @@ print(t.count(3))
 
 # # extend function
 
-# In[7]:
+# In[29]:
 
 
 print(t)
@@ -281,7 +321,7 @@ print(t)
 
 # # index function
 
-# In[10]:
+# In[30]:
 
 
 print(t)
@@ -291,7 +331,7 @@ t.index(15)
 
 # # insert function 
 
-# In[13]:
+# In[31]:
 
 
 t = [9, 41, 12, 3, 74, 15]
@@ -302,7 +342,7 @@ print(t)
 
 # # pop function 
 
-# In[24]:
+# In[32]:
 
 
 t = [9, 41, 12, 3, 74, 15]
@@ -313,7 +353,7 @@ print(t)
 
 # # remove function
 
-# In[28]:
+# In[33]:
 
 
 t = [9, 41, 12, 3, 74, 15]
@@ -328,7 +368,7 @@ print(t)
 
 # # reverse function 
 
-# In[29]:
+# In[34]:
 
 
 t = [9, 41, 12, 3, 74, 15]
@@ -339,7 +379,7 @@ print(t)
 
 # # sort function 
 
-# In[31]:
+# In[35]:
 
 
 t = [9, 41, 12, 3, 74, 15]
@@ -352,7 +392,7 @@ print(t)
 
 # # Is Something in a List?
 
-# In[34]:
+# In[36]:
 
 
 t = [9, 41, 12, 3, 74, 15]
@@ -360,7 +400,7 @@ print(t)
 12 in t
 
 
-# In[35]:
+# In[37]:
 
 
 5 in t
@@ -368,7 +408,7 @@ print(t)
 
 # # Built-in Functions and Lists
 
-# In[36]:
+# In[38]:
 
 
 nums = [3, 41, 12, 9, 74, 15]
@@ -381,7 +421,7 @@ print(sum(nums)/len(nums))
 
 # # split a string with a lot of spaces 
 
-# In[37]:
+# In[39]:
 
 
 line = 'A lot               of spaces'
@@ -390,7 +430,7 @@ line.split()
 
 # # split a string using a delimter 
 
-# In[38]:
+# In[40]:
 
 
 line = 'first;second;third'

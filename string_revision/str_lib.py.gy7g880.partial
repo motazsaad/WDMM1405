@@ -1,0 +1,129 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# # List string functions 
+
+# In[18]:
+
+
+s = 'abc'
+print(dir(s))
+
+
+# # Capitilize the first letter 
+
+# In[2]:
+
+
+'python is cool'.capitalize()
+
+
+# # Center a string in a window of characters 
+
+# In[3]:
+
+
+print('Python is cool'.center(50))
+
+
+# # Count a substring in a string
+
+# In[4]:
+
+
+'Python is cool'.count('o')
+
+
+# In[5]:
+
+
+'Python is cool'.count('oo')
+
+
+# # Find the index of a charachter or a substring 
+
+# In[6]:
+
+
+'Python is cool'.find('th')
+
+
+# In[7]:
+
+
+'Python is cool'.find('m')
+
+
+# In[8]:
+
+
+'Welcome {} to Python {}'.format('Ahmed', 'II')
+
+
+# # is title? return true if the 1st letter of every word is capital
+
+# In[9]:
+
+
+'Python Programming'.istitle()
+
+
+# In[10]:
+
+
+'Python programming'.istitle()
+
+
+# # title 
+
+# In[11]:
+
+
+'hello world, welcome to python 2'.title()
+
+
+# # Partition: works like split but returns a tuple. 
+
+# In[12]:
+
+
+'Hello World, welcome to python 2'.partition(' ')
+
+
+# In[13]:
+
+
+x = 3 
+y = 4 
+point = (x, y) # tuple
+print(point)
+
+
+# # Split: returns a list of words 
+
+# In[14]:
+
+
+'Hello World, welcome to python 2'.split() # by default split using space 
+
+
+# In[15]:
+
+
+'Hello World, welcome to python 2'.split(',')
+
+
+# # Zero fill 
+
+# In[16]:
+
+
+'42'.zfill(5)
+
+
+# In[17]:
+
+
+for i in range(15):
+    print(str(i).zfill(6))
+
