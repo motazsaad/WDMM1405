@@ -7,7 +7,7 @@
 # * Data Structure  -  A particular way of organizing data in a computer
 # 
 
-# # primitive data: one value in variable
+# # Primitive data: one value in variable
 # 
 # primitive data type: int, float, str 
 # بيانات أولية وليست تجميعية ، فقط استطيع تخزين قيمة واحدة في المتغير 
@@ -21,7 +21,7 @@ x = 20
 print(x)
 
 
-# # store more than one value in one variable (collection)
+# # Store more than one value in one variable (collection)
 # List is a collect. We can store many values in one variable 
 
 # In[2]:
@@ -32,7 +32,7 @@ print(x)
 print(type(x))
 
 
-# # different  types in one collection 
+# # Different  types in one collection 
 
 # In[3]:
 
@@ -66,14 +66,29 @@ print([1, 24, 76])
 
 x = [1, [5, 6], 7]
 print(x)
+
+
+# In[7]:
+
+
 print(x[0])
+
+
+# In[8]:
+
+
 print(x[1])
+
+
+# In[9]:
+
+
 print(x[1][0])
 
 
 # # Empty list 
 
-# In[7]:
+# In[10]:
 
 
 # empty lists 
@@ -83,7 +98,7 @@ print('x = ', x)
 print('y = ', y)
 
 
-# In[8]:
+# In[11]:
 
 
 # Empty String 
@@ -93,7 +108,7 @@ print(empty_str)
 
 # # iteration variable 
 
-# In[9]:
+# In[12]:
 
 
 # iteration variable 
@@ -102,7 +117,7 @@ for num in [5, 4, 3, 2, 1] :
 print('Blastoff!')
 
 
-# In[10]:
+# In[13]:
 
 
 # iteration variable 
@@ -112,7 +127,20 @@ for name in friends:
 print('Done!')
 
 
-# In[11]:
+# # Looking inside the list
+# ![image.png](attachment:image.png)
+
+# In[14]:
+
+
+# loop using index
+friends = ['Joseph', 'Glenn', 'Sally']
+for i in range(len(friends)):
+    print('Happy New Year:',  friends[i])
+print('Done!')
+
+
+# In[15]:
 
 
 # access elements by index 
@@ -121,7 +149,7 @@ print(friends[1])
 
 # # mutable list: we can change the value of list elements 
 
-# In[12]:
+# In[16]:
 
 
 # mutable list 
@@ -131,7 +159,7 @@ print(friends)
 
 # # immutable list (list of characters)
 
-# In[13]:
+# In[17]:
 
 
 # immutable list 
@@ -139,14 +167,14 @@ fruit = 'banana'
 print(fruit)
 
 
-# In[14]:
+# In[18]:
 
 
 print(fruit[1])
-# fruite[1] = 'e' # error 
+fruit[1] = 'e' # error 
 
 
-# In[15]:
+# In[ ]:
 
 
 # convert to mutable 
@@ -156,28 +184,28 @@ f[1] = 'e'
 print(f)
 
 
-# In[16]:
+# In[ ]:
 
 
-fruit = str(''.join(f))
+fruit = ''.join(f)
 print(fruit)
 
 
 # # join a list of numbers 
 
-# In[17]:
+# In[ ]:
 
 
 # join list 
 l1 = [1, 3, 10, 19]
 print(l1)
-l2 = [str(x) for x in l1]
-print(';'.join(l2))
+l2 = [str(n) for n in l1]
+print('\t'.join(l2))
 
 
 # # loop on a list: way 1: iteration variable 
 
-# In[18]:
+# In[ ]:
 
 
 # loop on list 
@@ -189,7 +217,7 @@ for friend in friends :
 
 # # loop on a list: way 2: using index 
 
-# In[19]:
+# In[ ]:
 
 
 # loop on list 
@@ -201,7 +229,7 @@ for i in range(len(friends)) :
 
 # # list concatonation 
 
-# In[20]:
+# In[ ]:
 
 
 a = [1, 2, 3]
@@ -209,22 +237,27 @@ b = [4, 5, 6]
 # concat 
 c = a + b 
 print(c)
-# d = a - b # error 
+
+
+# In[ ]:
+
+
+d = a - b # error 
 
 
 # # sum 2 lists 
 
-# In[21]:
+# In[ ]:
 
 
 # sum 2 lists 
 a = [1, 2, 3]
 b = [4, 5, 6]
-c = [a[i] + b[i] for i in range(len(a))] # using index 
+c = [a[i] + b[i] for i in range(len(a))]  # using index 
 print(c)
 
 
-# In[22]:
+# In[ ]:
 
 
 # sum 2 lists 
@@ -236,7 +269,7 @@ print(c)
 
 # # Understanding zip function 
 
-# In[23]:
+# In[ ]:
 
 
 a = [1, 2, 3]
@@ -246,20 +279,30 @@ print(list(zip(a, b)))
 
 # # slicing a list 
 
-# In[24]:
+# In[ ]:
 
 
 # slicing a list 
 t = [9, 41, 12, 3, 74, 15]
 print(t)
 print(t[2:4]) # index 2, 3 
+
+
+# In[ ]:
+
+
 print(t[2:]) # index 2 to the end 
+
+
+# In[ ]:
+
+
 print(t[:4]) # index 0 to 3 
 
 
 # # list methods 
 
-# In[25]:
+# In[ ]:
 
 
 # list mehtods 
@@ -267,9 +310,9 @@ t = [9, 41, 12, 3, 74, 15]
 print(dir(t))
 
 
-# # append functions 
+# # Append functions 
 
-# In[26]:
+# In[ ]:
 
 
 print(t)
@@ -277,9 +320,9 @@ t.append(10) # add 3 to the end of the list
 print(t)
 
 
-# # sum 2 lists using empty list with append 
+# # Sum 2 lists using empty list with append 
 
-# In[27]:
+# In[ ]:
 
 
 # sum 2 lists using empty list with append 
@@ -292,46 +335,84 @@ for i in range(list_size):
     r = a[i] + b[i]
     c.append(r)
     print(i, c)
+    
+# in one line 
+# c = [a[i] + b[i] for i in range(len(a))] 
+# c = [m + n for m, n in zip(a, b)]
 
 
-# # count function 
+# # Count function 
 
-# In[28]:
+# In[ ]:
 
 
 # count 
 t = [9, 41, 12, 3, 74, 15]
 print(t)
 print(t.count(3))
+
+
+# In[ ]:
+
+
+print(t.count(13))
+
+
+# In[ ]:
+
+
 print(t.count(74))
+
+
+# In[19]:
+
+
 t.append(3)
 print(t)
 print(t.count(3))
 
 
-# # extend function
+# # Extend function
 
-# In[29]:
+# In[ ]:
 
 
+t = [9, 41, 12, 3, 74, 15]
 print(t)
-t.extend([1, 2, 5]) # similar to t + [1, 2, 5]
+t.extend([1, 2, 5]) # similar to t + [1, 2, 5] # like concat 
 print(t)
 
 
-# # index function
+# # extend vs append
 
-# In[30]:
+# In[ ]:
 
 
+# extend vs append 
+t = [9, 41, 12, 3, 74, 15]
+t.append([1, 2, 5])
+print(t)
+
+
+# # Index function
+
+# In[ ]:
+
+
+t = [9, 41, 12, 3, 74, 15]
 print(t)
 t.index(15)
-# t.index(5) # does not exist --> value error 
 
 
-# # insert function 
+# In[ ]:
 
-# In[31]:
+
+t.index(5) # does not exist --> value error 
+
+
+# # Insert function 
+
+# In[ ]:
 
 
 t = [9, 41, 12, 3, 74, 15]
@@ -340,9 +421,9 @@ t.insert(3, 5) # insert 5 at index 3
 print(t)
 
 
-# # pop function 
+# # Pop function 
 
-# In[32]:
+# In[ ]:
 
 
 t = [9, 41, 12, 3, 74, 15]
@@ -351,24 +432,35 @@ print(t.pop())
 print(t)
 
 
-# # remove function
+# # Remove function
 
-# In[33]:
+# In[20]:
 
 
-t = [9, 41, 12, 3, 74, 15]
+t = [9, 41, 12, 3, 74, 15, 3]
 print(t)
 t.remove(12)
 print(t)
-t.append(3)
+
+
+# In[21]:
+
+
+t = [9, 41, 12, 3, 74, 15, 3]
 print(t)
 t.remove(3) # remove the first match 
 print(t)
 
 
-# # reverse function 
+# In[22]:
 
-# In[34]:
+
+t.remove(70) # error 
+
+
+# # Reverse function 
+
+# In[32]:
 
 
 t = [9, 41, 12, 3, 74, 15]
@@ -377,14 +469,21 @@ t.reverse()
 print(t)
 
 
-# # sort function 
+# # Sort function 
 
-# In[35]:
+# In[33]:
 
 
 t = [9, 41, 12, 3, 74, 15]
 print(t)
 t.sort()
+print(t)
+
+
+# In[34]:
+
+
+t = [9, 41, 12, 3, 74, 15]
 print(t)
 t.sort(reverse=True)
 print(t)
@@ -392,7 +491,7 @@ print(t)
 
 # # Is Something in a List?
 
-# In[36]:
+# In[35]:
 
 
 t = [9, 41, 12, 3, 74, 15]
@@ -400,7 +499,7 @@ print(t)
 12 in t
 
 
-# In[37]:
+# In[36]:
 
 
 5 in t
@@ -408,31 +507,103 @@ print(t)
 
 # # Built-in Functions and Lists
 
-# In[38]:
+# In[37]:
 
 
 nums = [3, 41, 12, 9, 74, 15]
 print(len(nums))
+
+
+# In[38]:
+
+
 print(max(nums))
+
+
+# In[39]:
+
+
 print(min(nums))
+
+
+# In[40]:
+
+
 print(sum(nums))
+
+
+# In[41]:
+
+
 print(sum(nums)/len(nums))
 
 
 # # split a string with a lot of spaces 
 
-# In[39]:
+# In[42]:
 
 
-line = 'A lot               of spaces'
+line = 'A lot               of spaces' # white space 
 line.split()
 
 
-# # split a string using a delimter 
+# # Split a string using a delimter 
 
-# In[40]:
+# In[43]:
 
 
 line = 'first;second;third'
 line.split(';')
+
+
+# In[44]:
+
+
+line = '10\t13\t25'
+numbers = line.split('\t')
+print(numbers)
+
+
+# In[45]:
+
+
+int_numbers = [int(n) for n in numbers]
+print(int_numbers)
+
+
+# In[46]:
+
+
+print(sum(int_numbers))
+
+
+# # Handle mail box
+
+# In[47]:
+
+
+line = 'From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008'
+words = line.split()
+print(words)
+
+
+# In[48]:
+
+
+email = words[1]
+print(email)
+
+
+# In[49]:
+
+
+pieces = email.split('@')
+print(pieces)
+
+
+# In[50]:
+
+
+year = words[-1]
+print(year)
 
