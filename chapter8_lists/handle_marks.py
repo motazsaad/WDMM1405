@@ -19,12 +19,16 @@ for line in infile:
     marks.append(sum(numbers_int))
 
 print('average', sum(marks) / len(marks))
-print('success count', get_count(marks, 55))
-marks = [m + 3 for m in marks]
+print('success count', get_count(marks, 60))
+marks = [m + 8 for m in marks]
 print('after push')
 print('average', sum(marks) / len(marks))
-print('success count', get_count(marks, 55))
+print('success count', get_count(marks, 60))
 outfile = open('marks_after_push.txt', mode='w')
 outfile.write('\n'.join([str(m) for m in marks]))
 infile.close()
+outfile.close()
+
+outfile = open('marks_after_push.txt', mode='a')
+outfile.write('\naverage: {}'.format(sum(marks) / len(marks)))
 outfile.close()
