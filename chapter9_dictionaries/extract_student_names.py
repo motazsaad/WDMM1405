@@ -5,7 +5,7 @@ outfile2 = open('female_students.txt', encoding='utf-8', mode='w')
 for line in infile:
     if line.strip().startswith('#'):
         continue
-    tokens = line.replace('\"', '').split(',')
+    tokens = line.split(',')
     name = tokens[0]
     first_name = name.split()[0]
     std_id = tokens[3]

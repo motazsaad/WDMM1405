@@ -5,5 +5,7 @@ names = infile.read().split('\n')
 for name in names:
     name_dict[name] = name_dict.get(name, 0) + 1
 
+print(name_dict)
+print('----------------------')
 for k, v in name_dict.items():
     print(k, v)
