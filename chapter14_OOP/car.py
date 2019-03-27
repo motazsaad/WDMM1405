@@ -20,7 +20,6 @@ class Car:
     def __str__(self):
         return 'Type: {}\tmodel {}\tcolor: {}'.format(self.car_type, self.model, self.color)
 
-
     def speedup(self):
         self.speed += 10
         print('current speed = ', self.speed)
