@@ -17,12 +17,12 @@ def my_max(l1):
 # In[2]:
 
 
-def my_mix(l1):
-    mix_number = l1[0]
+def my_min(l1):
+    min_number = l1[0]
     for number in l1:
-        if number < mix_number:
-            mix_number = number
-    return mix_number
+        if number < min_number:
+            min_number = number
+    return min_number
 
 
 # In[3]:
@@ -68,49 +68,47 @@ def my_abs(x):
     if x >= 0:
         return x
     else:
-        return x * -1 
+        return x * -1
 
-
-# # calls 
-
-# In[8]:
-
-
-print(my_max([1, 2, 5]))
-
-
-# In[9]:
-
-
-print(my_mix([1, 2, 5]))
-
-
-# In[10]:
-
-
-print(my_sum([1, 2, 5]))
-
-
-# In[11]:
-
-
-print(my_len([1, 2, 5]))
-
-
-# In[12]:
-
-
-print(my_divmod(23, 5))
-
-
-# In[13]:
-
-
-print(my_power(23, 5))
-
-
-# In[14]:
-
-
-print(my_abs(-12))
-
+    # # # calls
+#
+# # In[8]:
+#
+#
+# print(my_max([1, 2, 5]))
+#
+#
+# # In[9]:
+#
+#
+# print(my_min([1, 2, 5]))
+#
+#
+# # In[10]:
+#
+#
+# print(my_sum([1, 2, 5]))
+#
+#
+# # In[11]:
+#
+#
+# print(my_len([1, 2, 5]))
+#
+#
+# # In[12]:
+#
+#
+# print(my_divmod(23, 5))
+#
+#
+# # In[13]:
+#
+#
+# print(my_power(23, 5))
+#
+#
+# # In[14]:
+#
+#
+# print(my_abs(-12))

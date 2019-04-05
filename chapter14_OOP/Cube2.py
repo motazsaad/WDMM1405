@@ -5,13 +5,13 @@ from chapter14_OOP.Square import Square
 # self : pointer to the same class
 # super() # pointer to the super class
 
-class Cube(Square):
+class Cube(Square):  # child Cube, Parent: Square
 
     def area(self): # override
         return super().area() * 6
 
     def volume(self):
-        return super().area() * self.x
+        return self.x ** 3
 
 
 cube1 = Cube(3)

@@ -22,7 +22,7 @@ l3 = [1,5,8]
 print(l1, l2, l3)
 rec2 = Rectangle()
 print(rec2)
-rec3 = Rectangle(length=7, width=9)
+rec3 = Rectangle(width=9, length=7)
 print(rec3)
 
 print('aria for', rec1, rec1.get_aria())
