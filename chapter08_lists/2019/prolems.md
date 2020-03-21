@@ -1,6 +1,4 @@
-Even indices
-Even elements
-Greater than left neighbor
+# Even indices / Even elements / Greater than left neighbor
 
 Statement
 Given a list of numbers, find and print all its elements that are greater than their left neighbor.
@@ -12,7 +10,7 @@ Example output
 5 4
 
 
-Same sign neighbors
+# Same sign neighbors
 
 Statement
 Given a list of non-zero integers, find and print the first adjacent pair of elements that have the same sign. If there is no such pair, print 0.
@@ -25,7 +23,7 @@ Example output #1
 
 
 
-Lists: Greater than neighbors
+# Lists: Greater than neighbors
 Statement
 Given a list of numbers, determine and print the number of elements that are greater than both of their neighbors.
 
@@ -40,7 +38,7 @@ Example output
 
 
 
-Swap neighbors
+# Swap neighbors
 Statement
 Given a list of numbers, swap adjacent elements in each pair (swap A[0] with A[1], A[2] with A[3], etc.). Print the resulting list. If a list has an odd number of elements, leave the last element intact.
 
